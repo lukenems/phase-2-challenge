@@ -1,0 +1,115 @@
+body {
+  margin: .5px;
+}
+
+.login {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border: 2px solid black;
+}
+
+.login h3 {
+  margin-left: 18px;
+}
+
+.buttonHeader {
+  align-self: center;
+  padding-right: 18px;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.left {
+  flex-basis: 200px;
+  border: 2px solid black;
+  border-top: 0px;
+}
+
+.left p {
+  padding-left: 8px;
+}
+
+.title {
+  margin-top: auto;
+  border-bottom: solid black 2px;
+  background-color: lightgray;
+  padding-left: 8px;
+}
+
+.primary {
+  flex: 1;
+}
+
+.primary h2 {
+  font-size: 3em;
+  margin-top: 10px;
+  margin-bottom: 0;
+  padding-left: 20px;
+}
+
+button {
+  width: 90px;
+}
+
+/*Grocery Sections*/
+.drama {
+  display: flex;
+  flex-direction: column;
+  padding: 0 20px;
+}
+
+.romance {
+  display: flex;
+  flex-direction: column;
+  padding: 0 20px;
+  margin-top: 20px;
+}
+
+.action {
+  display: flex;
+  flex-direction: column;
+  padding: 0 20px;
+  margin-top: 20px;
+}
+
+.sci-fi {
+  display: flex;
+  flex-direction: column;
+  padding: 0 20px;
+  margin-top: 20px;
+}
+
+
+/*Section Items*/
+
+.title1 {
+  display: flex;
+  width: 100%;
+}
+
+.title2 {
+  display: flex;
+}
+
+.title3 {
+  display: flex;
+}
+
+.name {
+  width: 70%;
+}
+
+.filmLength {
+  width: 15%;
+}
+
+.play {
+  display; flex;
+  align-self: center;
+  width: 15%;
+}
