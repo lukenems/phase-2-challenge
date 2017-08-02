@@ -1,4 +1,4 @@
-//Month(date)
+//Month()
 
 function month(date) {
   console.assert(typeof date === 'string', "Please insert a date, with quotes, in the syntax: 'YYYY,MM,DD'");
@@ -8,27 +8,33 @@ function month(date) {
   return monthName[month]
 }
 
-//reverseSentence
+//reverseSentence()
 
 function reverseSentence(str) {
+  console.assert(typeof str === 'string', "Please enter a string to reverse")
   return str.split(" ").reverse().join(" ")
 }
 
-//nameProps(obj)
+
+//nameProps()
 
 function nameProps(obj) {
+  if (Array.isArray(obj) || typeof obj !== 'object') {
+    console.warn("Please enter an Object to find keys")
+  } else {
   return Object.keys(obj);
-}
+}}
 
-//filterBetween
+//filterBetween()
 
 function filterBetween(array, min, max) {
-  var filterAnimals = array.filter(function(animal) {
-    if(animal >= min && animal <= max ) {
-      return animal
-    }
+  if (Array.isArray(array)) {
+  let selection = array.filter(function(animal) {
+    return animal >= min && animal <= max
   })
-  console.log(filterAnimals)
-}
+  return selection
+} else {
+  console.warn("Please enter an array as the first parameter")
+}}
 
 module.exports = {month, reverseSentence, nameProps, filterBetween}
